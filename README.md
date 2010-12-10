@@ -12,6 +12,10 @@ FSR172X
 
 The FSR must be configured with media-ctl before it is ready for use.
 
+    width=2048
+    height=128
+    size=${width}x${height}
+    
     ./media-ctl -r -l '"fsr172x 3-0010":0->"OMAP3 ISP CCDC":0[1], "OMAP3 ISP CCDC":1->"OMAP3 ISP CCDC output":0[1]'
     ./media-ctl -f "\"fsr172x 3-0010\":0[SGRBG12 $size], \"OMAP3 ISP CCDC\":1[SGRBG12 $size]"
     ./media-ctl -e 'OMAP3 ISP CCDC output'
