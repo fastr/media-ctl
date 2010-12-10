@@ -16,4 +16,8 @@ media-ctl: $(OBJS)
 clean:
 	rm -f $(OBJS) media-ctl
 
+install: media-ctl
+	@mkdir -p /usr/local/bin/
+	cp -a media-ctl /usr/local/bin/
+
 .PHONY: clean all

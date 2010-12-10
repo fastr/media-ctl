@@ -41,6 +41,7 @@ static struct {
 	{ "UYVY", V4L2_MBUS_FMT_UYVY16_1X16 },
 	{ "SGRBG10", V4L2_MBUS_FMT_SGRBG10_1X10 },
 	{ "SGRBG10_DPCM8", V4L2_MBUS_FMT_SGRBG10_DPCM8_1X8 },
+  { "SGRBG12", V4L2_MBUS_FMT_SGRBG12_1X12 },
 };
 
 const char *pixelcode_to_string(enum v4l2_mbus_pixelcode code)
